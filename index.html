@@ -24,7 +24,7 @@
         <ul class="navlist">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#services">My Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#experience">Experience</a></li>
         </ul>
@@ -49,19 +49,20 @@
     <!--about section design-->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="img/leo-profiles.jpeg">
+            <img src="img/leo-profiles.jpg">
         </div>
 
         <div class="about-text">
             <h2>About <span>Me</span></h2>
             <h4>Highly motivated and passionate about programming.</h4>
             <p>&bull; Degree in Information Systems</p>            
+            <p>&bull; Postgraduate in AI for Devs</p>            
             <p>&bull; Intermediate English </p>
             <p>&bull; Back-End Developer | Java - Node - TypeScript</p>
             <p>&bull; Volunteer at the "Mudando Minha Historia" project </p>
             
             <div class="socials">
-                <a href="https://www.linkedin.com/in/leonardo-barross/" target="_blank" class="btn-socials"><span><i class="bx bxl-linkedin"></i></span></a>
+                <a href="https://www.linkedin.com/in/barros-leonardo/" target="_blank" class="btn-socials"><span><i class="bx bxl-linkedin"></i></span></a>
                 <a href="https://github.com/LeoGBarros" target="_blank" class="btn-socials"><span><i class="bx bxl-github"></i></a>
                 <a href="https://api.whatsapp.com/send/?phone=5519998230021" target="_blank" class="btn-socials"><span><i class="bx bxl-whatsapp"></i></i></a>
             </div>
@@ -71,50 +72,104 @@
 
     <!--skills section design-->
     <section class="skills" id="skills">
-        <div class="skills-text">
-            <p>Knowledge and Studies</p>
-            <h2><span>My</span> Skills</h2>
+        <div class="main-text">
+          <h2><span>My</span> Skills</h2>
+          <p>Knowledge and Technologies I’ve worked with</p>
         </div>
-
-        <div class="services-content">            
-          <div class="box"><div class="s-icons"><i class="bx bxl-nodejs"></i></div><h3>NodeJS</h3></div>
-            <div class="box"><div class="s-icons"><i class="bx bxl-typescript"></i></div><h3>TypeScript</h3></div>
-            <div class="box"><div class="s-icons"><i class="bx bxl-javascript"></i></div><h3>JavaScript</h3></div>
-            <div class="box"><div class="s-icons"><i class="bx bxl-java"></i></div><h3>Java</h3></div>
-            <div class="box"><div class="s-icons"><i class="bx bx-data"></i></div><h3>MySQL</h3></div>
-            <div class="box"><div class="s-icons"><i class="bx bxl-docker"></i></div><h3>Docker</h3></div>            
-            <div class="box"><div class="s-icons"><i class="bx bx-loader-circle"></i></div><h3>Agile Frameworks (Scrum)</h3></div>
+      
+        <div class="skills-content">
+          <div class="skill-box">
+            <img src="icons/spring-boot-svgrepo-com.svg" alt="Java">
+            <h3>Java + Spring Boot</h3>
+          </div>
+          <div class="skill-box">
+            <img src="icons/nestjs-svgrepo-com.svg" alt="Node.js">
+            <h3>Node.js + NestJS</h3>
+          </div>
+          <div class="skill-box">
+            <img src="icons/php-svgrepo-com.svg" alt="PHP">
+            <h3>PHP (Slim)</h3>
+          </div>
+          <div class="skill-box">
+            <img src="icons/react-svgrepo-com.svg" alt="React">
+            <h3>React + TypeScript</h3>
+          </div>
+          <div class="skill-box">
+            <img src="icons/docker-svgrepo-com.svg" alt="Docker">
+            <h3>Docker & CI/CD</h3>
+          </div>
+          <div class="skill-box">
+            <img src="icons/pgsql-svgrepo-com.svg" alt="PostgreSQL">
+            <h3>PostgreSQL & MySQL</h3>
+          </div>
+          <div class="skill-box">
+            <img src="icons/api-svgrepo-com.svg" alt="APIs">
+            <h3>Microservices & REST APIs</h3>
+          </div>
         </div>
     </section>
+      
+      
 
     <!--portfolio section design-->
     <section class="portfolio" id="portfolio">
         <div class="main-text">
-            <p>Portfolio</p>
-            <h2>Personal <span>Projects</span></h2>
-            <div class="portfolio-content">
-                <div class="row">
-                    <img src="img/sparklly.png">
-                    <div class="layer">
-                        <h5>Sparklly</h5>
-                        <p> An application designed for domestic employers to organize their schedules and find services. Technologies used: TypeScript, Node.js, Docker, GoLang, PostgreSQL databases.</p>
-                        <a href="https://github.com/LeoGBarros/APP-TCC" target="_blank"><i class="bx bx-link-external"></i></a>
-                    </div>
-                </div>                    
-                <div class="row">
-                    <img src="img/super_trunfo.jpg">
-                    <div class="layer">
-                        <h5>Super Trunfo</h5>
-                        <p> • Fully functional routes for playing Super Trunfo.</br>
-                            • User/Admin creation and management.</br>
-                            • Card and Deck creation features.</br>
-                            • Full match functionality for interactive gameplay.</br>
-                        </p>
-                        <a href="https://github.com/LeoGBarros/SuperTrunfo" target="_blank"><i class="bx bx-link-external"></i></a>
-                    </div>
-                </div>            
-         </div>      
-    </section> 
+          <p>Portfolio</p>
+          <h2>Personal <span>Projects</span></h2>
+      
+          <div class="portfolio-content">
+      
+            <!-- Projeto Sparklly -->
+            <a href="https://github.com/LeoGBarros/APP-TCC" target="_blank" class="row">
+              <img src="img/sparklly.png" alt="Sparklly" />
+              <div class="layer">
+                <div class="layer-content">
+                  <h5>Sparklly</h5>
+                  <p>An application designed for domestic employers to organize their schedules and find services. Technologies used: TypeScript, Node.js, Docker, GoLang, PostgreSQL databases.</p>
+                  <i class="bx bx-link-external"></i>
+                </div>
+              </div>
+            </a>
+      
+            <!-- Projeto Super Trunfo -->
+            <a href="https://github.com/LeoGBarros/SuperTrunfo" target="_blank" class="row">
+              <img src="img/super_trunfo.jpg" alt="Super Trunfo" />
+              <div class="layer">
+                <div class="layer-content">
+                  <h5>Super Trunfo</h5>
+                  <p>
+                    • Fully functional routes for playing Super Trunfo.<br>
+                    • User/Admin creation and management.<br>
+                    • Card and Deck creation features.<br>
+                    • Full match functionality for interactive gameplay.<br>
+                  </p>
+                  <i class="bx bx-link-external"></i>
+                </div>
+              </div>
+            </a>
+      
+            <!-- Projeto Psicólogo -->
+            <a href="https://github.com/LeoGBarros/Renata-Psico" target="_blank" class="row">
+              <img src="img/renata_logo.jpg" alt="Psicólogo" />
+              <div class="layer">
+                <div class="layer-content">
+                  <h5>Psicólogo</h5>
+                  <p>
+                    • Smooth anchor-based navigation<br>
+                    • Mobile-friendly responsive menu<br>
+                    • Scroll-triggered animations<br>
+                    • Modular Angular architecture<br>
+                    • Fully responsive layout
+                  </p>                  
+                  <i class="bx bx-link-external"></i>
+                </div>
+              </div>
+            </a>
+      
+          </div>
+        </div>
+    </section>
+      
 
     <!--experience section design-->
     <section class="experience" id="experience">
@@ -180,20 +235,7 @@
                     <p>• Collaboration in an agile team, using Scrum and Kanban, participating in code reviews and resolving critical and non-critical bugs across the entire code base.</p>
                     
                 </div>
-            </div>
-    
-            <div class="container">
-                <img src="img/SiDi.png">
-                <div class="text-box">
-                    <small>Aug/2023 - Dec/2023</small>
-                    <h5><b><span>Software Engineering Intern</span></b> - SiDi</h5>
-                    <p>• Management of user profiles for company employees on both Windows and Linux development machines.</br>
-                    • Level 1 Support (application installation, initial machine configuration, email issue resolution, application troubleshooting, hardware handling, and network infrastructure resolution).</br>
-                    • Daily participation in meetings covering internal problems and solutions.</br>
-                    • Handling of GitHub / Jira.</br>
-                    • Use of Agile methodology for issue tracking to better assist users.</br></p>
-                </div>
-            </div>
+            </div>           
     
             <div class="container">
                 <img src="img/kyndryl_logo-1.png">
@@ -214,7 +256,7 @@
     <!--end section design-->
     <section class="end">
         <div class="last-text">
-            <p>Copyright &#169; 2024 by Leonardo Barros. All rights reserved.</p>
+            <p>Copyright &#169; 2025 by Leonardo Barros. All rights reserved.</p>
         </div>
     </section>
 

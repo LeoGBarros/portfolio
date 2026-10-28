@@ -543,7 +543,7 @@ ul, ol { list-style: none; }
 /* Services */
 .services {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -719,9 +719,25 @@ ul, ol { list-style: none; }
 /* Stack */
 .stack {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
+
+/* Nível "também já entreguei com": 3 colunas e menos destaque que produção */
+.stack__tier--secondary { margin-top: 48px; }
+.stack__tier--secondary .stack { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.stack__tier--secondary .stack__group { background: transparent; }
+.stack__tier--secondary .chips li { color: var(--muted); }
+
+.stack__tier-label {
+  margin-bottom: 16px;
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+}
+
+.stack__tier-label .muted { text-transform: none; letter-spacing: 0.02em; }
 
 .stack__group { padding: 24px; }
 
@@ -908,7 +924,7 @@ ul, ol { list-style: none; }
 @media (max-width: 1024px) {
   .hero { grid-template-columns: minmax(0, 1fr); }
   .hero__code { max-width: 560px; }
-  .services, .stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .services, .stack, .stack__tier--secondary .stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cases { grid-template-columns: minmax(0, 1fr); }
 }
@@ -944,7 +960,7 @@ ul, ol { list-style: none; }
 
 @media (max-width: 600px) {
   :root { --gutter: 16px; }
-  .services, .stack, .projects, .stats, .edu { grid-template-columns: 1fr; }
+  .services, .stack, .stack__tier--secondary .stack, .projects, .stats, .edu { grid-template-columns: 1fr; }
   .service { min-height: 0; }
   .service__num { margin-bottom: 24px; }
   .case__meta { flex-direction: column; align-items: flex-start; }

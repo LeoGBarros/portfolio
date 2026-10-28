@@ -2,10 +2,10 @@ import type { Dictionary } from "@/lib/i18n";
 
 export const pt: Dictionary = {
   meta: {
-    title: "Leonardo Barros — Engenheiro Blockchain",
+    title: "Leonardo Barros — Engenheiro Backend",
     description:
-      "Leonardo Barros, engenheiro blockchain em Campinas. Smart contracts em Solidity, backends em Go e TypeScript, Hyperledger Besu e Kubernetes para sistemas EVM em produção.",
-    ogDescription: "Smart contracts e backends para sistemas EVM em produção, em ambientes regulados.",
+      "Leonardo Barros, engenheiro backend em Campinas. Serviços em TypeScript e Go, PostgreSQL, Kubernetes, agentes de IA e integração com blockchain para sistemas que não podem errar.",
+    ogDescription: "Engenheiro backend para sistemas que não podem errar: TypeScript, Go, Kubernetes, agentes de IA e EVM.",
   },
 
   nav: {
@@ -22,54 +22,59 @@ export const pt: Dictionary = {
   },
 
   ticker: [
-    "Aberto a realocação",
-    "Engenheiro blockchain · smart contracts & backend",
-    "Solidity · EVM · Foundry · Hardhat",
-    "Go · TypeScript · Viem",
-    "Hyperledger Besu · QBFT",
-    "Kubernetes · Helm · Gateway API",
+    "Aberto a CLT/full-time e contratos remotos",
+    "Engenheiro backend · TypeScript · Go",
+    "APIs REST & gRPC · PostgreSQL",
+    "Kubernetes · Docker · GitHub Actions",
+    "Agentes de IA · Claude · OpenAI",
+    "Blockchain · Solidity · EVM · Viem",
     "Campinas, Brasil · remoto para o mundo",
   ],
 
   hero: {
     hello: "Olá, eu sou",
-    titleLine1: "Blockchain em produção,",
+    titleLine1: "Engenharia backend,",
     titleLine2: "do contrato ao cluster.",
     rotatorLead: "Eu construo",
     rotatorWords: [
-      "smart contracts",
+      "APIs REST & gRPC",
+      "serviços orientados a eventos",
+      "sistemas multiagentes",
       "indexadores on-chain",
-      "APIs tipadas para a chain",
-      "redes permissionadas",
-      "plataformas de tokenização",
+      "smart contracts",
     ],
     lead:
-      "Escrevo o Solidity que define quem participa do consenso na rede blockchain permissionada nacional do Brasil, e os contratos e serviços TypeScript de uma plataforma de tokenização de créditos de carbono e certificados de energia renovável.",
+      "Engenheiro backend em TypeScript e Go, em sistemas onde uma resposta errada custa dinheiro: as APIs, os indexadores e os deploys em Kubernetes de uma plataforma de tokenização de créditos de carbono, e o Solidity que governa o consenso da rede blockchain nacional do Brasil.",
     ctaPrimary: "Vamos conversar",
     ctaSecondary: "Ver trabalhos",
-    status: "Disponível para vagas CLT/full-time · aberto a realocação",
+    status: "Aberto a vagas e contratos remotos · aceito realocação",
     codeAria: "Resumo do perfil escrito como contrato Solidity",
   },
 
   services: {
     eyebrow: "O que faço",
-    title: "Trabalho que já está em produção.",
-    sub: "Ambientes regulados, redes permissionadas e código que precisa continuar correto depois da demo.",
+    title: "Backend que se sustenta em produção.",
+    sub: "Serviços tipados, testados de ponta a ponta e publicados em Kubernetes, em ambientes regulados onde estar correto vem antes de ser elegante.",
     items: [
       {
-        title: "Smart contracts",
-        text: "Solidity para redes EVM, escrito para ser revisado: controle de acesso explícito, proteção contra reentrância, caminhos de upgrade que não arriscam o storage e achados do Slither resolvidos antes do deploy.",
-        tags: ["Solidity", "Foundry", "Hardhat", "ERC-20 / 1155"],
+        title: "APIs & serviços backend",
+        text: "Serviços REST e gRPC em TypeScript e Go com schema em toda fronteira: Fastify, Zod e Prisma sobre PostgreSQL, com testes automatizados que mantêm a cobertura acima de 95%.",
+        tags: ["TypeScript", "Go", "Fastify · Zod · Prisma", "PostgreSQL"],
       },
       {
-        title: "Integração com a chain & backend",
-        text: "Serviços tipados que leem, assinam e indexam dados on-chain. A fronteira de ABI entre contrato e backend tratada como contrato de API versionado, não como JSON copiado e colado.",
-        tags: ["Go", "TypeScript", "Viem", "Fastify · Zod · Prisma"],
+        title: "Infraestrutura & entrega",
+        text: "Serviços em contêiner publicados em Kubernetes na Oracle OKE com Helm, Kustomize e Gateway API, atrás de pipelines de CI/CD que aumentaram a vazão do time em pelo menos 20%.",
+        tags: ["Kubernetes", "Docker", "GitHub Actions", "Helm"],
       },
       {
-        title: "Rede & infraestrutura",
-        text: "Redes Besu permissionadas com consenso QBFT, transições de validadores e operação de nós, publicadas em Kubernetes com Helm, Kustomize e Gateway API.",
-        tags: ["Besu", "QBFT", "Kubernetes (OKE)", "GitHub Actions"],
+        title: "Agentes de IA",
+        text: "Agentes e sistemas multiagentes sobre as APIs da Claude e da OpenAI: uso de ferramentas, orquestração entre agentes especializados e as salvaguardas que mantêm a saída do modelo longe de onde um erro sai caro.",
+        tags: ["Claude", "OpenAI", "Multiagentes", "Tool use"],
+      },
+      {
+        title: "Integração com blockchain",
+        text: "Contratos Solidity escritos para serem revisados e os serviços que os leem, assinam e indexam, com a fronteira de ABI entre contrato e backend tratada como contrato de API versionado.",
+        tags: ["Solidity", "EVM", "Viem", "Foundry · Hardhat"],
       },
     ],
   },
@@ -78,12 +83,12 @@ export const pt: Dictionary = {
     eyebrow: "Números",
     title: "Entregue e medido.",
     items: [
+      { value: 95, suffix: "%", label: "de cobertura mínima de testes com Vitest no backend do Projeto Neo" },
+      { value: 20, prefix: "+", suffix: "%", label: "de vazão de desenvolvimento com CI/CD e testes automatizados" },
       { value: 41, label: "cenários BDD por trás do contrato de seleção de validadores da RBB" },
       { value: 6, label: "nós na rede real usada para provar a troca de consenso QBFT" },
-      { value: 95, suffix: "%", label: "de cobertura mínima de testes com Vitest no Projeto Neo" },
-      { value: 20, prefix: "+", suffix: "%", label: "de vazão de desenvolvimento com CI/CD e testes automatizados" },
-      { value: 2, label: "programas de blockchain em produção no CPQD" },
-      { value: 2021, label: "ano em que comecei na indústria, dos bancos de dados à chain" },
+      { value: 2, label: "programas em produção no CPQD, da API ao cluster" },
+      { value: 2021, label: "ano em que comecei na indústria, dos bancos de dados aos sistemas distribuídos" },
     ],
   },
 
@@ -94,42 +99,30 @@ export const pt: Dictionary = {
     live: "Ativo",
     cases: [
       {
+        meta: "CPQD · cliente Neoenergia · 2025 – atual",
+        title: "Projeto Neo — backend de um marketplace de ativos ambientais",
+        lead: "Backend REST e smart contracts de uma plataforma em que certificados de energia renovável I-REC e créditos de carbono são emitidos, negociados e aposentados como tokens, com rastreabilidade da emissão à aposentadoria.",
+        points: [
+          "API REST em TypeScript (Fastify, Zod, Prisma) sobre PostgreSQL, que lê e assina on-chain via Viem e Ethers.js.",
+          "Transformei a fronteira de ABI entre contrato e backend — a origem mais frequente de defeitos em produção — em contrato de API versionado.",
+          "CI/CD e Vitest com cobertura mínima de 95%; deploy em Kubernetes (Oracle OKE) com Helm, Kustomize e Gateway API.",
+        ],
+        tags: ["TypeScript", "Fastify", "PostgreSQL", "Kubernetes", "Viem"],
+      },
+      {
         meta: "CPQD · 2025 – atual",
         title: "Rede Blockchain Brasil — seleção de validadores on-chain",
         lead: "O mecanismo em Solidity que decide quem participa do consenso QBFT na rede blockchain permissionada compartilhada do Brasil, consultado diretamente pelo Hyperledger Besu.",
         points: [
           "Remove validadores que param de produzir blocos e trata a readmissão por governança.",
-          "Upgrade por uma fachada de entrada em endereço fixo sobre lógica substituível, em vez de proxy UUPS: sem risco de colisão de storage ou de inicialização, e o endereço fixado no genesis de cada nó continua estável.",
-          "Provei a troca numa rede real de 6 nós: a configuração de transição do QBFT no Besu fica fora do hash do genesis, então uma chain em execução passa para a seleção por contrato sem reset.",
+          "Upgrade por uma fachada em endereço fixo sobre lógica substituível, em vez de proxy UUPS: sem risco de colisão de storage, e o endereço fixado no genesis de cada nó continua estável.",
+          "Provei a troca numa rede real de 6 nós: uma chain em execução passa para a seleção por contrato sem reset. Entregue com requisitos primeiro e 41 cenários BDD.",
         ],
         tags: ["Solidity", "Foundry", "Besu", "QBFT", "BDD"],
-      },
-      {
-        meta: "CPQD · cliente Neoenergia · 2025 – atual",
-        title: "Projeto Neo — marketplace de ativos ambientais",
-        lead: "Smart contracts e backend REST de um dApp em que certificados de energia renovável I-REC e créditos de carbono são emitidos, negociados e aposentados como tokens, com rastreabilidade on-chain da emissão à aposentadoria.",
-        points: [
-          "Famílias de tokens em ERC-1155 e ERC-20, com trilhas paralelas para I-REC e carbono, construídas com Hardhat + Ignition e TypeChain.",
-          "API REST em TypeScript (Fastify, Zod, Prisma) que lê e assina via Viem e Ethers.js.",
-          "Endurecido após auditoria: ReentrancyGuard nos contratos de token, achados do Slither resolvidos e a fronteira de ABI transformada em contrato versionado.",
-        ],
-        tags: ["ERC-1155", "Hardhat", "Viem", "Fastify", "Kubernetes"],
       },
     ],
     projectsTitle: "Open source & projetos pessoais",
     projects: [
-      {
-        href: "https://github.com/LeoGBarros/Solana-Zero-to-Hero-2-Deploy-Your-First-Anchor-Program",
-        title: "Solana Speedrun — Zero to Hero",
-        text: "Desafios do Speedrun com um programa publicado pelo framework Anchor, em Rust.",
-        tags: ["Rust", "Anchor", "Solana"],
-      },
-      {
-        href: "https://github.com/LeoGBarros/cre-chainlink",
-        title: "CRE Chainlink",
-        text: "Explorando o Chainlink Runtime Environment: smart contracts ligados a dados e serviços off-chain.",
-        tags: ["Chainlink", "Solidity", "Oráculos"],
-      },
       {
         href: "https://github.com/LeoGBarros/APP-TCC",
         title: "Sparklly",
@@ -142,19 +135,44 @@ export const pt: Dictionary = {
         text: "Backend de jogo de cartas: gestão de usuários e admins, cartas e baralhos, e partida completa.",
         tags: ["REST", "Auth", "Lógica de jogo"],
       },
+      {
+        href: "https://github.com/LeoGBarros/cre-chainlink",
+        title: "CRE Chainlink",
+        text: "Explorando o Chainlink Runtime Environment: smart contracts ligados a dados e serviços off-chain.",
+        tags: ["Chainlink", "Solidity", "Oráculos"],
+      },
+      {
+        href: "https://github.com/LeoGBarros/Solana-Zero-to-Hero-2-Deploy-Your-First-Anchor-Program",
+        title: "Solana Speedrun — Zero to Hero",
+        text: "Desafios do Speedrun com um programa publicado pelo framework Anchor, em Rust.",
+        tags: ["Rust", "Anchor", "Solana"],
+      },
     ],
   },
 
   stack: {
     eyebrow: "Stack",
-    title: "Ferramentas do dia a dia.",
-    groups: [
-      { title: "Smart contracts", items: ["Solidity", "EVM", "ERC-20", "ERC-1155", "Foundry", "Hardhat + Ignition", "Slither", "OpenZeppelin"] },
-      { title: "Infra blockchain", items: ["Hyperledger Besu", "QBFT", "Redes permissionadas", "Genesis & transição de validadores", "Solana / Anchor"] },
-      { title: "Backend", items: ["Go", "TypeScript", "Node.js", "Fastify", "Zod", "Prisma", "Java / Spring Boot", "PostgreSQL", "MySQL"] },
-      { title: "Integração com a chain", items: ["Viem", "Ethers.js", "TypeChain", "Indexação de eventos", "gRPC"] },
-      { title: "Infraestrutura", items: ["Kubernetes (Oracle OKE)", "Helm", "Kustomize", "Gateway API", "Docker", "GitHub Actions", "GitLab CI"] },
-      { title: "Práticas", items: ["Requisitos primeiro", "BDD / Gherkin", "Vitest", "Testes E2E", "Code review", "Desenvolvimento assistido por IA"] },
+    title: "Ferramentas com que entrego.",
+    tiers: [
+      {
+        label: "Em produção",
+        note: "No dia a dia, em sistemas no ar hoje",
+        groups: [
+          { title: "Backend", items: ["TypeScript", "Node.js", "Go", "Fastify", "Zod", "Prisma", "PostgreSQL", "REST", "gRPC"] },
+          { title: "Infraestrutura", items: ["Kubernetes (Oracle OKE)", "Docker", "Helm", "Kustomize", "Gateway API", "GitHub Actions", "GitLab CI"] },
+          { title: "Blockchain", items: ["Solidity", "EVM / Ethereum", "Viem", "Ethers.js", "Hardhat", "Foundry", "Hyperledger Besu"] },
+          { title: "Qualidade", items: ["Vitest", "BDD / Gherkin", "Testes E2E", "Slither", "Code review", "Requisitos primeiro"] },
+        ],
+      },
+      {
+        label: "Também já entreguei com",
+        note: "Empregos e projetos anteriores",
+        groups: [
+          { title: "IA", items: ["Claude", "OpenAI", "Sistemas multiagentes", "Tool use"] },
+          { title: "Linguagens & frameworks", items: ["Python", "Rust", "Java / Spring Boot", "React", "Next.js"] },
+          { title: "Cloud & dados", items: ["AWS (S3)", "MySQL", "SQL Server", "DB2", "Solana / Anchor"] },
+        ],
+      },
     ],
   },
 
@@ -167,7 +185,7 @@ export const pt: Dictionary = {
         role: "Desenvolvedor Blockchain",
         company: "CPQD · Campinas, Brasil",
         logo: "/img/cpqd_logo.svg",
-        text: "Smart contracts, backend e infraestrutura para a Rede Blockchain Brasil e o Projeto Neo (Neoenergia). CI/CD e testes automatizados que aumentaram a vazão de desenvolvimento em pelo menos 20%, com deploy em Kubernetes na Oracle OKE.",
+        text: "Backend, infraestrutura e smart contracts para o Projeto Neo (Neoenergia) e a Rede Blockchain Brasil. APIs TypeScript sobre PostgreSQL, CI/CD e testes automatizados que aumentaram a vazão de desenvolvimento em pelo menos 20%, com deploy em Kubernetes na Oracle OKE.",
       },
       {
         when: "Mai 2024 — Nov 2024",
@@ -202,31 +220,35 @@ export const pt: Dictionary = {
     items: [
       {
         q: "Que tipo de vaga você procura?",
-        a: "Engenharia blockchain ou backend em sistemas EVM em produção: smart contracts, os serviços que se integram a eles e a infraestrutura em que rodam. Full-time, remoto ou com realocação.",
+        a: "Engenharia backend: APIs e serviços em TypeScript ou Go, a camada de dados por trás deles e a infraestrutura em que rodam. Blockchain e agentes de IA são especialidades que trago junto, não requisitos da vaga.",
       },
       {
-        q: "Você aceita se mudar?",
-        a: "Sim. Moro em Campinas e estou aberto a me mudar ou a trabalhar remoto com sobreposição de horário com times da Europa e dos EUA.",
+        q: "Você aceita contrato remoto?",
+        a: "Sim. Estou aberto a vagas CLT/full-time e a contratos remotos com times internacionais, com sobreposição de horário com Europa e EUA. Também aceito realocação.",
       },
       {
-        q: "Chains públicas ou redes permissionadas?",
-        a: "Meu trabalho em produção é em redes EVM permissionadas (Hyperledger Besu com QBFT). Contratos, ferramentas e padrões de integração são a mesma stack EVM das chains públicas, e já construí em Solana e Chainlink em projetos pessoais.",
+        q: "Você só trabalha com blockchain?",
+        a: "Não. A maior parte do meu dia é backend: APIs tipadas, PostgreSQL, testes, CI/CD e Kubernetes. Blockchain é o domínio onde aprendi a construir pensando em correção, e esse hábito vale para qualquer sistema que lida com dinheiro ou dado regulado.",
       },
       {
-        q: "Como você trata a segurança dos contratos?",
-        a: "Requisitos primeiro, depois testes: cenários BDD para o comportamento, suítes Foundry ou Hardhat para o código, análise estática com Slither e revisão explícita de controle de acesso, reentrância e caminhos de upgrade antes de qualquer deploy.",
+        q: "O que você já construiu com IA?",
+        a: "Agentes e sistemas multiagentes sobre as APIs da Claude e da OpenAI, além da pós-graduação em IA para devs. Também uso IA todo dia no desenvolvimento — revisão, geração de testes e documentação — com a mesma regra que aplico a contratos: nada vai para produção sem verificação.",
+      },
+      {
+        q: "Como você trata código que não pode errar?",
+        a: "Requisitos primeiro, depois testes: cenários BDD para o comportamento, suítes unitárias e E2E para o código, análise estática e revisão explícita de controle de acesso e caminhos de falha antes de qualquer deploy.",
       },
     ],
   },
 
   contact: {
     eyebrow: "Contato",
-    title: "Precisa de alguém que entregue do contrato ao cluster?",
-    sub: "Mande uma mensagem curta com a vaga, a stack e o prazo. Costumo responder em um ou dois dias.",
+    title: "Precisa de um engenheiro backend que entregue do contrato ao cluster?",
+    sub: "Mande uma mensagem curta com a vaga ou o projeto, a stack e o prazo. Costumo responder em um ou dois dias.",
   },
 
   footer: {
-    role: "Engenheiro Blockchain · Campinas · Mundo",
+    role: "Engenheiro Backend · Campinas · Mundo",
     pages: "Páginas",
     socials: "Redes",
     built: "Feito com Next.js",

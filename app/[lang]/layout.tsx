@@ -52,11 +52,23 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Leonardo Guedes Barros",
-  jobTitle: "Blockchain Engineer",
+  jobTitle: "Backend Engineer",
   address: { "@type": "PostalAddress", addressLocality: "Campinas", addressCountry: "BR" },
   email: "mailto:leoguedesbarros@gmail.com",
   sameAs: ["https://www.linkedin.com/in/barros-leonardo/", "https://github.com/LeoGBarros"],
-  knowsAbout: ["Solidity", "EVM", "Hyperledger Besu", "QBFT", "Go", "TypeScript", "Viem", "Kubernetes"],
+  knowsAbout: [
+    "Backend engineering",
+    "TypeScript",
+    "Node.js",
+    "Go",
+    "PostgreSQL",
+    "Kubernetes",
+    "AI agents",
+    "Multi-agent systems",
+    "Solidity",
+    "EVM",
+    "Viem",
+  ],
 };
 
 export default async function RootLayout({ children, params }: LayoutProps<"/[lang]">) {

@@ -99,7 +99,7 @@ export function Hero({ hero }: { hero: Dictionary["hero"] }) {
               {" {\n    "}
               <span className="t">string</span> <span className="k">public constant</span>
               {" role =\n        "}
-              <span className="s">&quot;Blockchain Engineer&quot;</span>
+              <span className="s">&quot;Backend Engineer&quot;</span>
               {";\n    "}
               <span className="t">string</span> <span className="k">public constant</span>
               {" base =\n        "}
@@ -109,9 +109,11 @@ export function Hero({ hero }: { hero: Dictionary["hero"] }) {
               {"[] "}
               <span className="k">public</span>
               {" stack = [\n        "}
-              <span className="s">&quot;Solidity&quot;</span>, <span className="s">&quot;Go&quot;</span>
+              <span className="s">&quot;TypeScript&quot;</span>, <span className="s">&quot;Go&quot;</span>
               {",\n        "}
-              <span className="s">&quot;TypeScript/Viem&quot;</span>, <span className="s">&quot;Kubernetes&quot;</span>
+              <span className="s">&quot;PostgreSQL&quot;</span>, <span className="s">&quot;Kubernetes&quot;</span>
+              {",\n        "}
+              <span className="s">&quot;Solidity&quot;</span>, <span className="s">&quot;AI agents&quot;</span>
               {"\n    ];\n\n    "}
               <span className="c">{"/// correctness and access control"}</span>
               {"\n    "}
@@ -213,18 +215,25 @@ export function Stack({ stack }: { stack: Dictionary["stack"] }) {
   return (
     <section className="section wrap" id="stack" aria-labelledby="stack-title">
       <SectionHead n="04" id="stack-title" eyebrow={stack.eyebrow} title={stack.title} />
-      <div className="stack">
-        {stack.groups.map((g) => (
-          <div key={g.title} className="stack__group reveal">
-            <h3 className="mono">{g.title}</h3>
-            <ul className="chips">
-              {g.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+      {stack.tiers.map((tier, t) => (
+        <div key={tier.label} className={`stack__tier${t > 0 ? " stack__tier--secondary" : ""}`}>
+          <p className="stack__tier-label mono reveal">
+            {tier.label} <span className="muted">· {tier.note}</span>
+          </p>
+          <div className="stack">
+            {tier.groups.map((g) => (
+              <div key={g.title} className="stack__group reveal">
+                <h3 className="mono">{g.title}</h3>
+                <ul className="chips">
+                  {g.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </section>
   );
 }

@@ -160,7 +160,7 @@ export const pt: Dictionary = {
         groups: [
           { title: "Backend", items: ["TypeScript", "Node.js", "Go", "Fastify", "Zod", "Prisma", "PostgreSQL", "REST", "gRPC"] },
           { title: "Infraestrutura", items: ["Kubernetes (Oracle OKE)", "Docker", "Helm", "Kustomize", "Gateway API", "GitHub Actions", "GitLab CI"] },
-          { title: "Blockchain", items: ["Solidity", "EVM / Ethereum", "Viem", "Ethers.js", "Hardhat", "Foundry", "Hyperledger Besu"] },
+          { title: "Blockchain", items: ["Solidity", "EVM / Ethereum", "Viem", "Ethers.js", "Hardhat", "Foundry", "Hyperledger Besu", "Solana"] },
           { title: "Qualidade", items: ["Vitest", "BDD / Gherkin", "Testes E2E", "Slither", "Code review", "Requisitos primeiro"] },
         ],
       },
@@ -170,7 +170,7 @@ export const pt: Dictionary = {
         groups: [
           { title: "IA", items: ["Claude", "OpenAI", "Sistemas multiagentes", "Tool use"] },
           { title: "Linguagens & frameworks", items: ["Python", "Rust", "Java / Spring Boot", "React", "Next.js"] },
-          { title: "Cloud & dados", items: ["AWS (S3)", "MySQL", "SQL Server", "DB2", "Solana / Anchor"] },
+          { title: "Cloud & dados", items: ["AWS (S3)", "MySQL", "SQL Server", "DB2"] },
         ],
       },
     ],

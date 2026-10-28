@@ -158,7 +158,7 @@ export const en = {
         groups: [
           { title: "Backend", items: ["TypeScript", "Node.js", "Go", "Fastify", "Zod", "Prisma", "PostgreSQL", "REST", "gRPC"] },
           { title: "Infrastructure", items: ["Kubernetes (Oracle OKE)", "Docker", "Helm", "Kustomize", "Gateway API", "GitHub Actions", "GitLab CI"] },
-          { title: "Blockchain", items: ["Solidity", "EVM / Ethereum", "Viem", "Ethers.js", "Hardhat", "Foundry", "Hyperledger Besu"] },
+          { title: "Blockchain", items: ["Solidity", "EVM / Ethereum", "Viem", "Ethers.js", "Hardhat", "Foundry", "Hyperledger Besu", "Solana"] },
           { title: "Quality", items: ["Vitest", "BDD / Gherkin", "E2E testing", "Slither", "Code review", "Requirements-first"] },
         ],
       },
@@ -168,7 +168,7 @@ export const en = {
         groups: [
           { title: "AI", items: ["Claude", "OpenAI", "Multi-agent systems", "Tool use"] },
           { title: "Languages & frameworks", items: ["Python", "Rust", "Java / Spring Boot", "React", "Next.js"] },
-          { title: "Cloud & data", items: ["AWS (S3)", "MySQL", "SQL Server", "DB2", "Solana / Anchor"] },
+          { title: "Cloud & data", items: ["AWS (S3)", "MySQL", "SQL Server", "DB2"] },
         ],
       },
     ],
